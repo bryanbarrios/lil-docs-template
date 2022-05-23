@@ -11,4 +11,13 @@ A lil docs template for lil projects. Built with NextJS (Typescript), ChakraUI a
 3. SEO
 4. Light / Dark mode
 
-**Note:** No production ready. I need to make some optimization and performance improvements. Also improve the code quality of some components. But you can explore the project.
+> **Warning**
+> No production ready, but you can explore the project.
+
+## TODO
+
+- Make some optimization and performance improvements
+- Refactor and improve some components and pages
+- Add nested documents and multilevel tree view
+- i18n support
+- Add blog functionality
