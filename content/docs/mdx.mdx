@@ -1,0 +1,150 @@
+---
+title: MDX
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+---
+
+## Headings
+
+<h1>Heading 1</h1>
+
+<h2>Heading 2</h2>
+
+<h3>Heading 3</h3>
+
+<h4>Heading 4</h4>
+
+<h5>Heading 5</h5>
+
+<h6>Heading 6</h6>
+
+### Paragraph
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+## Lists
+
+1. First
+2. Second
+3. Third
+
+- First
+- Second
+- Third
+
+## Task List
+
+- [x] First
+- [ ] Second
+- [ ] Third
+
+## Links
+
+Visit my profile [Bryan Barrios](https://github.com/bryanbarrios).
+
+## Image
+
+<Image
+  width={1280}
+  height={720}
+  objectFit="cover"
+  src="https://images.unsplash.com/photo-1649790442619-39d05db11246?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+  alt="Coffee"
+/>
+
+### With caption
+
+<figure>
+  <Image
+    width={1280}
+    height={720}
+    objectFit="cover"
+    src="https://images.unsplash.com/photo-1649321373260-94b8f9ac1073?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+    alt="Forcella Lavaredo, Auronzo di Cadore, Province of Belluno, Italy"
+  />
+  <figcaption>
+    Forcella Lavaredo, Auronzo di Cadore, Province of Belluno, Italy
+  </figcaption>
+</figure>
+
+## Code Block
+
+```typescript {1, 6, 10-13, 16} showLineNumbers
+interface User {
+  name: string;
+  id: number;
+}
+
+class UserAccount {
+  id: number;
+  name: string;
+
+  constructor(id: number, name: string) {
+    this.id = id;
+    this.name = name;
+  }
+}
+
+const user: User = new UserAccount(1, "Murphy");
+```
+
+## Inline Code
+
+You can use `content` to wrap inline code content.
+
+## Blockquote
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+>
+> _Bryan Barrios_
+
+### Nested Blockquote
+
+> Dorothy followed her through many of the beautiful rooms in her castle.
+>
+> > The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+
+## Table
+
+| First name | Last name | Role              | Email           |
+| ---------- | --------- | ----------------- | --------------- |
+| Mary       | Smith     | CEO               | mary@foo.com    |
+| John       | Doe       | Devops Engineer   | john@foo.com    |
+| Rose       | Stone     | Backend Engineer  | rose@foo.com    |
+| William    | Johnson   | Frontend Engineer | william@foo.com |
+
+## Callouts
+
+**Info**
+
+<Callout variant="info">
+  **Lorem ipsum:** Sed ut perspiciatis unde omnis iste natus error sit
+  voluptatem accusantium doloremque laudantium
+</Callout>
+
+**Success**
+
+<Callout variant="success">
+  **Lorem ipsum:** Sed ut perspiciatis unde omnis iste natus error sit
+  voluptatem accusantium doloremque laudantium
+</Callout>
+
+**Warning**
+
+<Callout variant="warning">
+  **Lorem ipsum:** Sed ut perspiciatis unde omnis iste natus error sit
+  voluptatem accusantium doloremque laudantium
+</Callout>
+
+**Error**
+
+<Callout variant="error">
+  **Lorem ipsum:** Sed ut perspiciatis unde omnis iste natus error sit
+  voluptatem accusantium doloremque laudantium
+</Callout>
+
+**Brand**
+
+<Callout>
+  **Lorem ipsum:** Sed ut perspiciatis unde omnis iste natus error sit
+  voluptatem accusantium doloremque laudantium
+</Callout>
